@@ -6,7 +6,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span class="span">Copyright &copy; Development | นายมาร์ก เว็บไซต์ 2022</span>
                     </div>
                 </div>
             </footer>
