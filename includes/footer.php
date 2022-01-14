@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
     <div class="container-fluid p-4">
         <div class="mx-auto">
-            Copyright &copy; 2020-2021 by Patipan | All right reserved
+            Copyright &copy; 2020-2021 by <a href="admin/index.html">Patipan</a> | All right reserved 
         </div>
     </div>
 </nav>
