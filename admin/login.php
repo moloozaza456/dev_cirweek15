@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include("includes/header.php"); ?>
 
 <div class="container">
@@ -15,6 +16,8 @@
                                     <h3 class="card-title text-center text-warning fs-2">ผู้ดูแลระบบ</h3>
                                 </div>
                             </div>
+
+                            <?php include("message.php");?>
 
                             <form action="code.php" method="post">
                                 <div class="form-group">
