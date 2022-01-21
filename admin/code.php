@@ -13,7 +13,7 @@ if (isset($_POST['login_btn'])) {
         $_SESSION['email'] = $email_login;
         header("Location: index.php");
     } else {
-        $_SESSION['status'] = "อีเมลล์หรือรหัสผ่านไม่ถูกต้อง";
+        $_SESSION['message'] = "กรุณาป้อนข้อมูล อีเมลล์หรือรหัสผ่าน ใหม่ครับ";
         header("Location: login.php");
     }
 }
