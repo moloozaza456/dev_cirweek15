@@ -4,6 +4,7 @@
     $password="";
     $dbconnect="cirdb";
 
-    $conn=mysqli_connect("$host","$user","$password","$dbconnect");
+    $con=mysqli_connect("$host","$user","$password","$dbconnect");
+    mysqli_set_charset($con,"utf8");
     //$conn=mysqli_connect("localhost","root","","cirdb");
 ?>
