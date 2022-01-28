@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2022 at 03:37 AM
+-- Generation Time: Jan 28, 2022 at 05:13 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `cirdb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hotnew`
+--
+
+CREATE TABLE `hotnew` (
+  `id` int(11) NOT NULL,
+  `head` text COLLATE utf8_unicode_ci NOT NULL,
+  `detail` text COLLATE utf8_unicode_ci NOT NULL,
+  `date` text COLLATE utf8_unicode_ci NOT NULL,
+  `namepic` text COLLATE utf8_unicode_ci NOT NULL,
+  `namedoc` text COLLATE utf8_unicode_ci NOT NULL,
+  `hotcount` int(11) NOT NULL,
+  `design` text COLLATE utf8_unicode_ci NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `hotnew`
+--
+
+INSERT INTO `hotnew` (`id`, `head`, `detail`, `date`, `namepic`, `namedoc`, `hotcount`, `design`, `time`) VALUES
+(1, 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565”', 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565” และ “งดรับ งดให้” ของขวัญ ของกำนัลทุกชนิดจากการปฏิบัติหน้าที่ (No Gift Policy)', '28/01/2022', 'thanost.jpg', '1.pdf', 1, 'ผู้ดูแลระบบ', '2022-01-28 04:11:03');
 
 -- --------------------------------------------------------
 
