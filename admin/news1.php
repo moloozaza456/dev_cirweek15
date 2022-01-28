@@ -14,8 +14,49 @@
     </div>
     <!-- Content Row -->
 
+    <div class="card shadow">
+        <div class="card-header">
+            <h6 class="card-title">Add News - ช่าวสาร &nbsp;
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAdminNews" data-whatever="@mdo">ข่าวประชาสัมพันธ์</button>
+            </h6>
+        </div>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAdminNews" data-whatever="@mdo">Add News</button>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="addAdminNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
