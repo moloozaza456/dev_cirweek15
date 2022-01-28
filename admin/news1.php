@@ -27,10 +27,12 @@
                 <table class="table table-bordered border-primary">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">ลำดับ</th>
+                            <th scope="col">หัวข้อ</th>
+                            <th scope="col">รายละเอียด</th>
+                            <th scope="col">วันเวลา </th>
+                            <th scope="col">แก้ไข</th>
+                            <th scope="col">ลบข่าว</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -39,23 +41,26 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <td>
+                                <form action="news_edit.php" method="post">
+                                    <input type="hidden" name="news_edit_id">
+                                    <button type="submit" name="news_editbtn" class="btn btn-success">EDIT</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form action="news_code.php" method="post">
+                                    <input type="hidden" name="delete_image">
+                                    <input type="hidden" name="delete_doc">
+                                    <input type="hidden" name="delete_id">
+                                    <button type="submit" name="news_deletebtn" class="btn btn-danger">DELETE</button>
+                                </form>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
     </div>
 
     <div class="modal fade" id="addAdminNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
