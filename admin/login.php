@@ -17,7 +17,12 @@
                                 </div>
                             </div>
 
-                            <?php include("message.php");?>
+                            <?php 
+                                if(isset($_SESSION['status']) && $_SESSION['status'] !=''){
+                                    echo'<h2 class="bg-denger text-white"></h2>'.$_SESSION['status'];
+                                    unset($_SESSION['status']);
+                                }
+                            ?>
 
                             <form action="code.php" method="post">
                                 <div class="form-group">
