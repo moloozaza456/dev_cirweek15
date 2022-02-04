@@ -25,7 +25,7 @@
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     
                     <form action="code.php" method="post">
-                        <button class="btn btn-primary" name="logout_btn">Logout2</button>
+                        <button class="btn btn-primary" name="logout_btn">Logout</button>
                     </form>
                     
                 </div>
