@@ -1,7 +1,8 @@
 <?php session_start()?>
 
 <?php 
+// include("./login.php");
 if(!$_SESSION['auth_user']){
-    header("Location: ../user/login.php");
+    header("Location: ./login.php");
 }
 ?>

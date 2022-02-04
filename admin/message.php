@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION['message'])) {
+if (isset($_SESSION['auth_user'])) {
 ?>
 
 
