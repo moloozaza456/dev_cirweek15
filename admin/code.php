@@ -18,6 +18,11 @@ if (isset($_POST['login_btn'])) {
         header("Location: login.php");
     }
 }
+else{
+    $_SESSION['status'] = "กรุณาป้อนข้อมูล อีเมลล์หรือรหัสผ่าน ใหม่ครับ";
+    header("Location: login.php");
+}
+
 ?>
 
 <?php
