@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 28, 2022 at 05:13 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.11
+-- Host: localhost:3306
+-- Generation Time: 18 ก.พ. 2022 เมื่อ 03:57 AM
+-- เวอร์ชันของเซิร์ฟเวอร์: 10.5.12-MariaDB
+-- PHP Version: 7.3.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cirdb`
+-- Database: `id18398731_cirdb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hotnew`
+-- โครงสร้างตาราง `hotnew`
 --
 
 CREATE TABLE `hotnew` (
@@ -40,16 +41,16 @@ CREATE TABLE `hotnew` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `hotnew`
+-- dump ตาราง `hotnew`
 --
 
 INSERT INTO `hotnew` (`id`, `head`, `detail`, `date`, `namepic`, `namedoc`, `hotcount`, `design`, `time`) VALUES
-(1, 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565”', 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565” และ “งดรับ งดให้” ของขวัญ ของกำนัลทุกชนิดจากการปฏิบัติหน้าที่ (No Gift Policy)', '28/01/2022', 'thanost.jpg', '1.pdf', 1, 'ผู้ดูแลระบบ', '2022-01-28 04:11:03');
+(1, 'เปิดรับสมัครลูกจ้างชั่วคราว ในตำแหน่ง เจ้าหน้าที่ธุรการ', 'วิทยาลัยเทคนิคตราด เปิดรับสมัครคัดเลือกบุคคลเพื่อบรรจุเป็นลูกจ้างชั่วคราว ในตำแหน่งเจ้าหน้าที่ธุรการ จำนวน 1 อัตรา สมัครด้วยตนเองได้ตั้งแต่บัดนี้ ถึงวันที่ 17 กุมภาพันธ์ 2565 ในวันและเวลาราชการ ณ ห้องงานบุคลากร วิทยาลัยเทคนิคตราด เขต 2 สอบถามข้อมูลเพิ่มเติมโทร. 039-518105', '18 กุมภาพันธ์ 2565', 'job1.jpg', 'file1.pdf', 0, 'ผู้ดูแลระบบ-วท.ตราด', '2022-02-18 03:55:56');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- โครงสร้างตาราง `users`
 --
 
 CREATE TABLE `users` (
@@ -64,7 +65,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- dump ตาราง `users`
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `role_as`, `status`, `created_at`) VALUES
@@ -75,6 +76,12 @@ INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `role_as`, `st
 --
 
 --
+-- Indexes for table `hotnew`
+--
+ALTER TABLE `hotnew`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -83,6 +90,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `hotnew`
+--
+ALTER TABLE `hotnew`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
