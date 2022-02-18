@@ -39,7 +39,7 @@
 
             <div class="table-responsive">
                 <?php
-                $perpage = 1;
+                $perpage = 4;
                 if (isset($_GET['page']) & !empty($_GET['page'])) {
                     $curpage = $_GET['page'];
                 } else {
