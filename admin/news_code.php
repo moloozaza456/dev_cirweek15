@@ -1,5 +1,5 @@
 <?php include("security.php"); ?>
-<?php include("config/dbconnect.php"); ?>
+<?php include("includes/dbconnect.php"); ?>
 <?php include("includes/thaidate.php"); ?>
 
 <?php

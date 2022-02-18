@@ -30,6 +30,11 @@
                 echo $_SESSION['success'];
                 unset($_SESSION['success']);
             }
+            
+            if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+                    echo '<h2  class="bg-danger text-white">' . $_SESSION['status'] . '</h2>';
+                    unset($_SESSION['status']);
+            }
             ?>
 
             <div class="table-responsive">
@@ -99,7 +104,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="news_code.php" method="post">
+                    <form action="news_code.php" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="col-form-label">หัวข้อข่าว</label>
                             <textarea name="head" class="form-control" required placeholder="เพิ่ม-หัวข้อข่าว"></textarea>
