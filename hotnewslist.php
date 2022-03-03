@@ -21,7 +21,7 @@
 
         <?php
         $no = 0;
-        $sql = "select * from hotnew order by id desc";
+        $sql = "select * from hotnew order by id desc"; // เรียกตาราง desc ข่าวใหม่สุด มากไปน้อย
         $result = mysqli_query($con, $sql);
         $num = mysqli_num_rows($result);
         if ($num > 0) {
